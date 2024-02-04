@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.http.response import StreamingHttpResponse
 from main.camera import VideoCamera, IPWebCam, MaskDetect, LiveWebCam
-from openai import ChatCompletion
-import openai
+# from openai import ChatCompletion
+# import openai
 import cv2
             
 # Create your views here.
@@ -46,7 +46,7 @@ cap = cv2.VideoCapture(0)
 def capture_frame(request):
     ret, frame = cap.read()
 
-
+"""
 
 def chatbot_view(request):
     conversation = request.session.get('conversation', [])
@@ -89,3 +89,4 @@ def chatbot_view(request):
         return render(request, 'main/recycle.html', {'conversation': conversation})
 
 
+"""
