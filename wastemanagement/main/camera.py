@@ -6,7 +6,7 @@ import cv2,os,urllib.request
 import math
 import numpy as np
 from django.conf import settings
-
+import tensorflow as tf
 
 class VideoCamera(object):
 	def __init__(self):
@@ -61,6 +61,7 @@ class MaskDetect(object):
 		frame = self.vs.read()
 		frame = imutils.resize(frame, width=650)
 		frame = cv2.flip(frame, 1)
+		print(frame)
 		# detect faces in the frame and determine if they are wearing a
 		# face mask or not
   
