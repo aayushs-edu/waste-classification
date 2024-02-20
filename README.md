@@ -16,3 +16,6 @@ cd main
 ```
 python3 manage.py runserver
 ```
+
+# View our Devpost
+[EcoSense](https://devpost.com/software/ecosense-3ci9ht)
